@@ -1,0 +1,94 @@
+Results:
+
+    1. Parameters:
+            min_word_count = 100
+            word_Embedding_dimension = 32
+            hidden_layer_sizes = [64]
+            learning_rate = 0.0001
+            epoch = 10
+            batch_size = 100
+            op_method = adam
+            RecurrentUnit = SimpleRecurrentLayer
+            stopwrds = open('stopword.txt').read().split('\n')
+       Result:
+            validation accuracy:  0.8406
+            accuracy : 0.82684
+
+    2. Parameters:
+            min_word_count = 40
+            word_Embedding_dimension = 32
+            hidden_layer_sizes = [64]
+            learning_rate = 0.0001
+            epoch = 5
+            batch_size = 100
+            op_method = adam
+            RecurrentUnit = GRU
+            stopwrds = open('stopword.txt').read().split('\n')
+       Result:
+            validation accuracy: 0.87
+            accuracy : 0.85176
+
+    3. Parameters:
+            min_word_count = 40
+            word_Embedding_dimension = 32
+            hidden_layer_sizes = [64]
+            learning_rate = 0.0001
+            epoch = 7
+            batch_size = 100
+            op_method = adam
+            RecurrentUnit = LSTM
+            stopwrds = open('stopword.txt').read().split('\n')
+       Result:
+            validation accuracy: 0.8616
+            accuracy : 0.84108
+
+
+
+other Results:
+    # Vannila RNN, stopword removed, attention weight and attention vector [epochs=5, learning_rate=0.0001, word_embedding=32, hiddenlayer=[64], batch_size=100, op_method=adam, min_word_count=100]
+    # (4, 'validation correct rate:', 0.8406)
+    # accuracy :  0.82684
+
+    # Vannila RNN, stopword removed, attention weight and attention vector [epochs=7, learning_rate=0.0001, word_embedding=32, hiddenlayer=[64], batch_size=100, op_method=adam, min_word_count=100]
+    # (6, 'validation correct rate:', 0.8706)
+    # accuracy :  0.85976
+
+    # Vannila RNN, stopword removed, attention weight and attention vector [epochs=10, learning_rate=0.0001, word_embedding=32, hiddenlayer=[64], batch_size=100, op_method=adam, min_word_count=100]
+    # (9, 'validation correct rate:', 0.8692)
+    # accuracy :  0.86016
+
+    # GRU, attention vector [epochs=10, word_embedding=32, learning_rate=0.002, hiddenlayer=[64], batch_size=100, op_method=adam, num_most_freq_words_to_include = 500]
+    # ('validation correct rate:', 0.847)
+    # accuracy:  0.84512
+
+    # GRU, attention weight and attention vector [epochs=10, learning_rate=0.002, word_embedding=32, hiddenlayer=[64], batch_size=100, op_method=adam, num_most_freq_words_to_include = 500]
+    # ('validation correct rate:', 0.8534)
+    # accuracy:  0.84656
+
+    # GRU, stopword removed, attention weight and attention vector [epochs=5, learning_rate=0.0001, word_embedding=32, hiddenlayer=[64], batch_size=100, op_method=adam, num_most_freq_words_to_include = 5000]
+    # ('4 validation correct rate:', (0.8602))
+    # accuracy :  0.85468
+
+    # GRU, stopword removed, attention weight and attention vector [epochs=10, learning_rate=0.0001, word_embedding=32, hiddenlayer=[64], batch_size=100, op_method=adam, num_most_freq_words_to_include = 5000]
+    # ('validation correct rate:', 0.858)
+    # accuracy :  0.84416
+
+    # GRU, stopword removed, attention weight and attention vector [epochs=5, learning_rate=0.0001, word_embedding=32, hiddenlayer=[64], batch_size=100, op_method=adam, num_most_freq_words_to_include = 10000]
+    # (4, 'validation correct rate:', 0.87)
+    # accuracy :  0.85176
+
+    # GRU, stopword removed, attention weight and attention vector [epochs=5, learning_rate=0.0001, word_embedding=32, hiddenlayer=[64], batch_size=100, op_method=adam, min_word_count=40]
+    # (4, 'validation correct rate:', 0.8588)
+    # accuracy :  0.84384
+
+    # GRU, stopword removed, attention weight and attention vector [epochs=5, learning_rate=0.0001, word_embedding=32, hiddenlayer=[64], batch_size=100, op_method=adam, min_word_count=100]
+    # (4, 'validation correct rate:', 0.865)
+    # accuracy :  0.84888
+
+    # LSTM stopword removed, attention weight and attention vector [epochs=5, learning_rate=0.0001, word_embedding=32, hiddenlayer=[64], batch_size=100, op_method=adam, min_word_count=100]
+    # (4, 'validation correct rate:', 0.8096)
+    # accuracy :  0.8078
+
+    # LSTM stopword removed, attention weight and attention vector [epochs=7, learning_rate=0.0001, word_embedding=32, hiddenlayer=[64], batch_size=100, op_method=adam, min_word_count=100]
+    # (6, 'validation correct rate:', 0.8616)
+    # accuracy :  0.84108

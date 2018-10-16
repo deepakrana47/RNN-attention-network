@@ -1,0 +1,12 @@
+The parameters that are used for experimenting the RNN + attention model are given below
+
+1. min_word_count : The minimum threshold of word count, the word with count above it will be accepted.
+2. word_Embedding_dimension : The word embedding dimension used for embedding the semantic information.
+3. hidden_layer_sizes : The list vaiable contain the size of hidden layers, while number of element denotes number of hidden layer.
+4. learning_rate : the learning rate of model.
+5. epoch : Number of time the whole train set is iterated for training model.
+6. RecurrentUnit : The recurrent unit is used in Recurrent layer:
+                    SimpleRecurrentLayer: Vannila Recurrent unit
+                    GRU : Gated Recurrent Unit
+                    LSTM : Long Short Term Memory
+7. stopwrds : There are the words that have high frequency in text with very little semantic value in text.
