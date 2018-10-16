@@ -1,7 +1,7 @@
 # RNN-attention-network
 Here a simple implementation of RNN + attention neural network on IMDB movie reviews.
 
-This is a implementation of NN(Neural Network) model Recurrent Neural network with an attentation layer, where for different RNN(Recurrent Neural Network) units i.e. Vannila, GRU(Gated Recurrent Unit) and LSTM(Long Short Term memory) are used For Experiment on IMDB movies review data set where dataset consist of 50,000 labeled reviews (selected for sentiment analysis, where The sentiment of reviews is binary i.e 0{negative} or 1{positive}), out of which 25,000 are for train  and 25,000 are for testing. There are various other parameters that has been used for experiment and explained in detail in **result.txt** file.
+This is a implementation of NN(Neural Network) model Recurrent Neural network with an attentation layer, where for different RNN(Recurrent Neural Network) units i.e. Vannila, GRU(Gated Recurrent Unit) and LSTM(Long Short Term memory) are used For Experiment on IMDB movies review data set where dataset consist of 50,000 labeled reviews (selected for sentiment analysis, where The sentiment of reviews is binary i.e 0{negative} or 1{positive}), out of which 25,000 are for train  and 25,000 are for testing. There are various other parameters that has been used for experiment and detail explaination are given in **result.txt** file.
 
 # Requirement:
 To run the project linux and following software and packages are required:
@@ -41,6 +41,6 @@ The model architecture is given below[Yang 2016]:
                                                                         [0,1]
 
 
-The Results of the model with different RNN is given in **result.txt**.
+The Results of the model for different RNN Units are given in **result.txt**.
 
 [Yang 2016] Yang, Z., Yang, D., Dyer, C., He, X., Smola, A. and Hovy, E., 2016. Hierarchical attention networks for document classification. In Proceedings of the 2016 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (pp. 1480-1489).
