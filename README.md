@@ -1,7 +1,7 @@
 # RNN-attention-network
 Here a simple implementation of RNN + attention neural network on IMDB movie reviews.
 
-This is a implementation of NN(Neural Network) model Recurrent Neural network with an attentation layer, where for different RNN(Recurrent Neural Network) units i.e. Vannila, GRU(Gated Recurrent Unit) and LSTM(Long Short Term memory) are used For Experiment on IMDB movies review data set where dataset consist of 50,000 labeled reviews (selected for sentiment analysis, where The sentiment of reviews is binary i.e 0{negative} or 1{positive}), out of which 25,000 are for train  and 25,000 are for testing. There are various other parameters that has been used for experiment and detail explaination are given in **description.txt** file.
+This is a implementation of NN(Neural Network) model Recurrent Neural network with an attentation layer, where for different RNN(Recurrent Neural Network) units i.e. Vannila, GRU(Gated Recurrent Unit) and LSTM(Long Short Term memory) are used For Experiment on IMDB movies review data set where dataset consist of 50,000 labeled reviews (selected for sentiment analysis, where The sentiment of reviews is binary i.e 0{negative} or 1{positive}), out of which 25,000 are for train  and 25,000 are for testing (for data detail goto: https://www.kaggle.com/c/word2vec-nlp-tutorial/data). There are various other parameters that has been used for experiment and detail explaination are given in **description.txt** file.
 
 # Requirement:
 To run the project linux and following software and packages are required:
