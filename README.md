@@ -3,6 +3,18 @@ Here a simple implementation of RNN + attention neural network on IMDB movie rev
 
 This is a implementation of NN(Neural Network) model Recurrent Neural network with an attentation layer, where for different RNN(Recurrent Neural Network) units i.e. Vannila, GRU(Gated Recurrent Unit) and LSTM(Long Short Term memory) are used For Experiment on IMDB movies review data set where dataset consist of 50,000 labeled reviews (selected for sentiment analysis, where The sentiment of reviews is binary i.e 0{negative} or 1{positive}), out of which 25,000 are for train  and 25,000 are for testing. There are various other parameters that has been used for experiment and explained in detail in **result.txt** file.
 
+# Requirement:
+To run the project linux and following software and packages are required:
+ 
+  python == 2.7 <br>
+  keres == 2.0.4 <br>
+  pandas == 0.20.1 <br>
+  sklearn == 0.19.2 <br>
+  bs4 == 0.0.1 <br>
+  numpy == 1.15.1 <br>
+  matplotlib >= 2.0.0 <br>
+
+# Description of Model:
 The model architecture is given below[Yang 2016]:
 
                                
