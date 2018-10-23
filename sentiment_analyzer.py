@@ -34,7 +34,6 @@ def Adam(cost, params, lr=0.002, b1=0.1, b2=0.001, e=1e-8):
     return updates
 
 
-
 class SimpleRNN:
     def __init__(self, D, hidden_layer_sizes, V):
         self.hidden_layer_sizes = hidden_layer_sizes
